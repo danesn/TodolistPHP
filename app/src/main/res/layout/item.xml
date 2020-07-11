@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@drawable/bgitem"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:elevation="5dp"
+    android:layout_marginRight="14dp"
+    android:layout_marginLeft="14dp"
+    android:padding="8dp"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp">
+
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/titleToDoList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubikmedium"
+            android:text="Title asdasdasdasdasdsdadasdasd"
+            android:singleLine="true"
+            android:maxWidth="220dp"
+            android:ellipsize="end"
+            android:textSize="22sp"
+            android:textColor="#000C5D"/>
+
+        <TextView
+            android:id="@+id/descToDoList"
+            android:layout_below="@id/titleToDoList"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubikregular"
+            android:singleLine="true"
+            android:maxWidth="250dp"
+            android:ellipsize="end"
+            android:text="Detail asdsadasdasdasdadadd"
+            android:textSize="18sp"
+            android:textColor="#ADADAD"/>
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/dateToDoList"
+        android:layout_marginRight="10dp"
+        android:gravity="right"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubikmedium"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text="date asdasdsadsaasdasd"
+        android:textSize="18sp"
+        android:textColor="#F63EA5"/>
+
+</RelativeLayout>

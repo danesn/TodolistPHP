@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/iconSplash"
+        android:src="@drawable/splashicon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:adjustViewBounds="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/titleMainIcon"
+        android:text="LOGIN"
+        android:textColor="#554E8F"
+        android:textSize="22sp"
+        android:fontFamily="@font/rubikmedium"
+        android:gravity="center"
+        android:layout_below="@id/iconSplash"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/titleMainIcon"
+        android:hint="Email"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColorHint="#B5B5B5"
+        android:textColor="#000C5D"
+        android:padding="12dp"
+        android:background="@drawable/bginputtodo"
+        android:fontFamily="@font/rubikregular"/>
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edtEmail"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColorHint="#B5B5B5"
+        android:textColor="#000C5D"
+        android:padding="12dp"
+        android:background="@drawable/bginputtodo"
+        android:fontFamily="@font/rubikregular"/>
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_below="@id/edtPassword"
+        android:elevation="4dp"
+        android:layout_marginTop="50dp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/rubikmedium"
+        android:textSize="18sp"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:background="@drawable/btngreen"
+        android:layout_width="258dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_below="@id/buttonLogin"
+        android:textAlignment="center"
+        android:text="Don't have account ?"
+        android:textColor="#82A0B7"
+        android:textSize="17sp"
+        android:fontFamily="@font/rubikregular"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_below="@id/text"
+        android:elevation="4dp"
+        android:layout_marginTop="20dp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/rubikmedium"
+        android:textSize="18sp"
+        android:text="Register here"
+        android:textColor="@color/white"
+        android:background="@drawable/btngreen"
+        android:layout_width="258dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

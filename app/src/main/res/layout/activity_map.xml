@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MapActivity"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+    <TextView
+        android:id="@+id/tvGPS"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#554E8F"
+        android:textSize="22sp"
+        android:fontFamily="@font/rubikmedium"
+        android:text="GPS: "/>
+
+    <TextView
+        android:id="@+id/tvLat"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#554E8F"
+        android:textSize="22sp"
+        android:fontFamily="@font/rubikmedium"
+        android:text="Lat: "/>
+
+    <TextView
+        android:id="@+id/tvLong"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#554E8F"
+        android:textSize="22sp"
+        android:fontFamily="@font/rubikmedium"
+        android:text="Long: "/>
+
+    <Button
+        android:id="@+id/btnTurnOn"
+        android:background="@drawable/btnblue"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:fontFamily="@font/rubikmedium"
+        android:textSize="18sp"
+        android:elevation="4dp"
+        android:textColor="@color/white"
+        android:text="Click Here to Turn On GPS"/>
+</LinearLayout>

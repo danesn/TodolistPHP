@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Activity.MainActivity">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradientbluetop"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_marginLeft="28dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubikregular"
+            android:text="Hello Danes!"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:layout_marginTop="44dp"/>
+
+        <TextView
+            android:id="@+id/tvCountTask"
+            android:layout_marginLeft="28dp"
+            android:text="Today you have no tasks"
+            android:fontFamily="@font/rubikregular"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvName"/>
+
+        <Button
+            android:id="@+id/buttonLogout"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="44dp"
+            android:background="@drawable/btnplus"
+            android:fontFamily="@font/rubikregular"
+            android:text="Option"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+
+        <ImageButton
+            android:id="@+id/addButton"
+            android:padding="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btnplus"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="42dp"
+            android:layout_marginRight="28dp"
+            android:src="@drawable/iconadd"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/noTasksView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iconNoTask"
+            android:layout_marginTop="140dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/iconnotasks" />
+
+        <TextView
+            android:id="@+id/noTasksTitle"
+            android:fontFamily="@font/rubikmedium"
+            android:textSize="22sp"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:layout_below="@id/iconNoTask"
+            android:text="No Tasks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/noTasksDetail"
+            android:fontFamily="@font/rubikregular"
+            android:textSize="17sp"
+            android:textColor="#82A0B7"
+            android:gravity="center"
+            android:layout_below="@id/noTasksTitle"
+            android:text="You have no task to do."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

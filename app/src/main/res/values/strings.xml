@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ToDoListApp</string>
+    <string name="detailLandingText">You can record your daily activities or tasks in this application easily</string>
+</resources>

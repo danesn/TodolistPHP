@@ -1,0 +1,2 @@
+rootProject.name='ToDoListPHP'
+include ':app'

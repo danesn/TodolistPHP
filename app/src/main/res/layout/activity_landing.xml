@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.LandingActivity">
+
+    <ImageView
+        android:id="@+id/iconSplash"
+        android:src="@drawable/landingicon"
+        android:layout_marginTop="130dp"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/titleMainIcon"
+        android:layout_below="@id/iconSplash"
+        android:text="Make it simple"
+        android:textColor="#554E8F"
+        android:textSize="22sp"
+        android:fontFamily="@font/rubikmedium"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/detailMainIcon"
+        android:layout_below="@id/titleMainIcon"
+        android:textAlignment="center"
+        android:text="@string/detailLandingText"
+        android:textColor="#82A0B7"
+        android:textSize="17sp"
+        android:fontFamily="@font/rubikregular"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/buttonGetStarted"
+        android:layout_below="@id/detailMainIcon"
+        android:elevation="4dp"
+        android:layout_marginTop="50dp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/rubikmedium"
+        android:textSize="18sp"
+        android:text="Get Started"
+        android:textColor="@color/white"
+        android:background="@drawable/btngreen"
+        android:layout_width="258dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
